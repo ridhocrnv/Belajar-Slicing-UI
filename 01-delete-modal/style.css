@@ -7,25 +7,88 @@
     box-sizing: border-box;
 }
 
+/* --- BODY & LAYOUT --- */
 body {
     height: 100vh;
-    background-color: #e6e6e6;
+    background-color: #ebf2f7;
+    /* Warna background sedikit lebih lembut dari pure blue */
     font-family: 'Montserrat', sans-serif;
+
+    /* Teknik Centering Paling Ampuh: Flexbox */
     display: flex;
     justify-content: center;
+    /* Tengah secara Horizontal */
     align-items: center;
+    /* Tengah secara Vertikal */
 }
 
+/* --- MODAL CONTAINER --- */
 .container {
     background-color: white;
-    padding: 30px;
-    width: 360px;
-    text-align: center;
+    width: 240px;
+    padding: 15px;
+    /* Memberi jarak isi ke tepi kotak */
     border-radius: 12px;
+    /* Sudut tumpul agar modern */
+    text-align: center;
+    /* Agar teks dan icon di tengah */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Bayangan halus */
 }
 
 .icon {
-    font-size: 50px;
+    font-size: 30px;
     color: #ff1700;
-    margin: 15px;
+    margin: 10px;
+}
+
+/* --- TEXT STYLE --- */
+.text h1 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.text p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 10px;
+}
+
+/* --- BUTTON GROUP --- */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* --- BUTTON STYLE --- */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    width: 100%;
+    font-size: 10px;
+}
+
+.btn-cancel {
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d1d1;
+}
+
+.btn-delete {
+    background-color: #ff1700;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #e60000;
 }
