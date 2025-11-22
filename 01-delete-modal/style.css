@@ -9,7 +9,7 @@
 
 /* --- BODY & LAYOUT --- */
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ebf2f7;
     /* Warna background sedikit lebih lembut dari pure blue */
     font-family: 'Montserrat', sans-serif;
@@ -20,13 +20,15 @@ body {
     /* Tengah secara Horizontal */
     align-items: center;
     /* Tengah secara Vertikal */
+    padding: 20px;
 }
 
 /* --- MODAL CONTAINER --- */
 .container {
     background-color: white;
-    width: 240px;
-    padding: 15px;
+    max-width: 100%;
+    width: 320px;
+    padding: 24px;
     /* Memberi jarak isi ke tepi kotak */
     border-radius: 12px;
     /* Sudut tumpul agar modern */
@@ -52,8 +54,8 @@ body {
 .text p {
     color: #666;
     margin-bottom: 15px;
-    line-height: 1.5;
-    font-size: 10px;
+    line-height: 1.6;
+    font-size: 14px;
     font-weight: 500
 }
 
@@ -66,14 +68,15 @@ body {
 
 /* --- BUTTON STYLE --- */
 button {
-    padding: 8px 16px;
+    padding: 10px 16px;
     border: none;
     border-radius: 5px;
     font-weight: 600;
     font-family: inherit;
     cursor: pointer;
     width: 100%;
-    font-size: 10px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
 }
 
 .btn-cancel {
