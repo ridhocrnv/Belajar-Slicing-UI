@@ -96,7 +96,7 @@ body {
 
 /* --- RESEND LINK --- */
 .text-link {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     font-size: 14px;
     color: #666;
 }
@@ -142,4 +142,11 @@ button {
 
 .btn-verify:hover {
     background-color: #0056b3;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 0 24px 0;
 }
