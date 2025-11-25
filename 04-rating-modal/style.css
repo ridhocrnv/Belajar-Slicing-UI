@@ -55,7 +55,7 @@ body {
 /* --- RATINGS AREA (Tombol Besar) --- */
 .ratings {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     margin-bottom: 24px;
 }
 
@@ -64,20 +64,20 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: #f8f9fc;
+    justify-content: center;
     border: none;
-    border-radius: 12px;
-    border: 2px solid #f8f9fc;
-    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 50px;
+    padding: 12px 16px;
     cursor: pointer;
     transition: all 0.2 ease;
-
     font-family: inherit;
     color: #666;
+    font-size: 14px;
 }
 
 .rating-card i {
-    font-size: 28px;
+    font-size: 20px;
     color: #cbd1d8;
     transition: color 0.2s;
 }
@@ -88,8 +88,7 @@ body {
 }
 
 .rating-card:hover {
-    background-color: #eef2f6;
-    border-color: #dbe0e6;
+    background-color: #f0f7ff;
 }
 
 .rating-card:hover i {
@@ -97,8 +96,8 @@ body {
 }
 
 .rating-card:focus {
-    background-color: #fff;
-    border-color: #007bff;
+    background-color: #e7f1fe;
+    color: #007bff;
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
     outline: none;
 }
