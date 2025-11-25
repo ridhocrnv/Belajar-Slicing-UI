@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebf2f7;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 32px;
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+/* --- HEADER --- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+
+.close-icon {
+    color: #999;
+    font: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-icon:hover {
+    color: #333;
+}
+
+/* --- RATINGS AREA (Tombol Besar) --- */
+.ratings {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.rating-card {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #f8f9fc;
+    border: none;
+    border-radius: 12px;
+    border: 2px solid #f8f9fc;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+
+    font-family: inherit;
+    color: #666;
+}
+
+.rating-card i {
+    font-size: 28px;
+    color: #cbd1d8;
+    transition: color 0.2s;
+}
+
+.rating-card span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rating-card:hover {
+    background-color: #eef2f6;
+    border-color: #dbe0e6;
+}
+
+.rating-card:hover i {
+    color: #666;
+}
+
+.rating-card:focus {
+    background-color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+.rating-card:focus i {
+    color: #007bff;
+}
+
+/* --- COMMENT SECTION --- */
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: none;
+    background-color: #fcfcfc;
+    outline: none;
+}
+
+.comments textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* --- BUTTON GROUP --- */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-group button {
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: none;
+    color: #666;
+}
+
+.btn-cancel:hover {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
